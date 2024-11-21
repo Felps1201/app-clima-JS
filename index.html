@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Daily Weather</title>
+</head>
+    <div id="caixa">
+        <form id="pesquisa">
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="search" name="city_name" id="city_name" placeholder="Buscar cidade">
+
+    <button type="submit">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+</form>
+
+    <main id="clima">
+        <h1 id="title">São Luis, MA</h1>
+        
+        <section id="infos">
+            <section id="temp" >
+                <img id="temp_img" src="" alt="">
+
+                <section>
+                    <p id="temp_value">32</p>
+                    <p id="temp_description">Ensolarado</p>
+                </section>
+           </section> 
+        <section id="other_infos">
+            <div class="info">
+                <i id="temp_max_icon" class="fa-solid fa-temperature-high"></i>
+                <article>
+                    <h2>Temp. max</h2>
+                    <p id="temp_max">31°C</p>
+                </article>
+            </div>
+
+            <div class="info">
+                <i id="temp_min_icon" class="fa-solid fa-temperature-low"></i>
+                <article>
+                    <h2>Temp. min</h2>
+                    <p id="temp_min">18°C</p>
+                </article>
+            </div>
+
+            <div class="info">
+                <i id="umidade_icon" class="fa-solid fa-droplet"></i>
+                <article>
+                    <h2>Umidade</h2>
+                    <p id="umidade">50%</p>
+                </article>
+            </div>
+
+            <div class="info">
+                <i id="wind_icon" class="fa-solid fa-wind"></i>
+                <article>
+                    <h2>Vento</h2>
+                    <p id="vento">50 km/h</p>
+                </article>
+            </div>
+
+        </section>   
+           
+
+        </section>
+
+    </main>
+
+    <div id="alert"></div>    
+
+    </div>    
+    <script src="src/javascript/script.js"></script>
+</body>
+
+</html>
